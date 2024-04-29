@@ -1,24 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
-import styled, { keyframes } from 'styled-components';
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const fadeOut = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-`;
+import styled from 'styled-components';
 
 const ScrollButton = styled.button`
   position: fixed;
@@ -34,7 +16,7 @@ const ScrollButton = styled.button`
   width: 40px;
   height: 40px;
   font-size: 16px;
-  animation: ${({ visible }) => (visible === 'true' ? fadeIn : fadeOut)} 0.5s ease;
+  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transition: opacity 0.5s ease;
 `;
 
@@ -74,7 +56,7 @@ const ScrollUp = () => {
 
   return (
     <Container>
-      <ScrollButton $visible={isVisible} onClick={scrollToTop}>
+      <ScrollButton $visible={isVisible ? 1 : 0} onClick={scrollToTop}>
         &uarr;
       </ScrollButton>
     </Container>

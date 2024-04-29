@@ -7,9 +7,10 @@ const StyledBurgerContainer = styled.div`
   top: 2%;
   right: 2rem;
   z-index: 35;
+  
   @media (max-width: 768px) {
     position: absolute;
-    top: 2%;
+    top: 2.5%;
     right: 2rem;
   }
 `;
