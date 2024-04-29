@@ -5,13 +5,13 @@ import { Link } from 'react-scroll';
 import photo from '/src/assets/photos/profile.jpg';
 import githubIcon from '/src/assets/svg/github.svg';
 import linkedinIcon from '/src/assets/svg/linkedin.svg';
+import pdfFile from '/src/assets/pdf/cv_armando_kostas.pdf';
 import './Home.css';
 
 const Home = () => {
   const handleDownloadCV = () => {
-    const cvFilePath = '/src/assets/pdf/cv_armando_kostas.pdf';
     const link = document.createElement('a');
-    link.href = cvFilePath;
+    link.href = pdfFile; 
     link.download = 'cv_armando_kostas.pdf';
     document.body.appendChild(link);
     link.click();
