@@ -3,6 +3,9 @@
 ## Description
 This project is a responsive web application displaying my portfolio information. It includes sections for the home, about, resume, projects, and contact pages. The application is built using React and utilizes various frameworks and libraries for styling and functionality.
 
+## Live
+[Visit My Portfolio](https://armandok0.netlify.app/) - Click here to view the live version of the website.
+
 ## Table of Contents
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
