@@ -1,0 +1,265 @@
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  position: relative; 
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('/src/assets/fonts/Caveat-Regular.ttf') format('truetype');
+  font-display: swap; 
+}
+
+.top-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+  font-family: 'Caveat-Regular';
+}
+
+
+.left-half {
+  flex: 1;
+  background-color: #364156;
+}
+
+.right-half {
+  flex: 1.8;
+  background-color: #11151C;
+  position: relative;
+}
+
+
+.profile-photo {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%; 
+  left: 0%; 
+  transform: translate(-50%, -50%); 
+}
+
+.text-container {
+  font-family: 'poppins', sans-serif; 
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  padding-left: 10px;
+}
+
+.text-container p {
+  font-size: 24px;
+  color: #fff;
+}
+
+.text-container h1 {
+  font-size: 32px;
+  color: #fff;
+  margin: 0%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button  {
+  background-color: #364156;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.button:hover {
+  background-color: #293647;
+  transform: translateY(-2px);
+}
+
+.icons {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.name {
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  margin: 0;
+  color: #11151C;
+  position: relative;
+  top: -30px;
+  right: 5%;
+}
+
+/* Animation for letters of Web Developer */
+.animated-text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes revealText {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text > span {
+  display: inline-block;
+  opacity: 0;
+  animation: revealText 0.5s forwards;
+}
+
+.animated-text > span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.animated-text > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+/* Tablet view */
+@media screen and (max-width: 1200px) {
+  .home-section {
+    flex-direction: column;
+  }
+
+  .profile-photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    top: 0%;
+    left: 50%;
+  }
+
+  .name {
+    font-size: 60px;
+    position: relative;
+    top: -40px;
+    right: 5%;
+  }
+
+  .text-container {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+
+  .text-container p {
+    font-size: 20px;
+  }
+
+  .text-container h1 {
+    font-size: 30px;
+    color: #fff;
+    margin: 0%;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .button {
+    width: 130px;
+    margin-right: 10px; 
+  }
+  .contact-button {
+    width: 100px;
+  }
+}
+
+
+/* Mobile view */
+@media screen and (max-width: 800px) {
+  .home-section {
+    flex-direction: column;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 0%;
+    left: 50%;
+  }
+
+  .name {
+    font-size: 35px;
+    position: relative;
+    top: -23px;
+    right: 10%;
+  }
+
+  .text-container {
+    top: 47%;
+    left: 50%;
+    text-align: center;
+  }
+
+  .text-container p {
+    font-size: 18px;
+  }
+  
+  .text-container h1 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0%;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .button {
+    margin-right: 0;
+  }
+
+  .contact-button {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .text-container p {
+    font-size: 16px;
+  }
+  
+  .text-container h1 {
+    font-size: 18px;
+  }
+
+}
