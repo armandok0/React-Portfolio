@@ -14,7 +14,7 @@ const projectsData = [
     description: 'Vintage Furniture Store',
     languages: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MongoDb'],
     liveLink: '',
-    githubLink: 'https://github.com/armandok0/VintageFurnitureStore',
+    githubLink: 'https://github.com/armandok0/Vintage-Furniture-Store',
     backgroundImage: `url(${ecommerceBackground})`
   },
   {
@@ -23,7 +23,7 @@ const projectsData = [
     description: 'Manage Gym Members and Services',
     languages: ['HTML', 'CSS', 'Flask', 'MongoDb'],
     liveLink: '',
-    githubLink: 'https://github.com/armandok0/GymSystemManagement',
+    githubLink: 'https://github.com/armandok0/Gym-System-Management',
     backgroundImage: `url(${gymBackground})`
   },
   {
@@ -31,8 +31,8 @@ const projectsData = [
     name: 'Simple Task',
     description: 'Manage Customers, Products, and Users',
     languages: ['Angular', 'CSS', 'Typescript'],
-    liveLink: 'https://armandok0.github.io/FrontEndSimpleTaskAngular/',
-    githubLink: 'https://github.com/armandok0/FrontEndSimpleTaskAngular',
+    liveLink: '',
+    githubLink: 'https://github.com/armandok0/FrontEnd-Simple-Task-Angular',
     backgroundImage: `url(${manageBackground})`
   },
   {
@@ -40,8 +40,8 @@ const projectsData = [
     name: 'Personal Portfolio',
     description: 'This Portfolio Project',
     languages: ['React', 'JavaScript', 'CSS'],
-    liveLink: 'https://armandok0.com',
-    githubLink: 'https://github.com/armandok0/ReactPortfolio',
+    liveLink: 'https://armandok0.netlify.app/',
+    githubLink: 'https://github.com/armandok0/React-Portfolio',
     backgroundImage: `url(${resumeBackground})`
   },
   {
@@ -50,7 +50,7 @@ const projectsData = [
     description: 'Manage Users and their Bookings',
     languages: ['Flask', 'Postman', 'MongoDb', 'Docker'],
     liveLink: '',
-    githubLink: 'https://github.com/armandok0/AirlineFlightManagement',
+    githubLink: 'https://github.com/armandok0/Airline-Flight-Management',
     backgroundImage: `url(${airmanagementBackground})`
   },
 ];
