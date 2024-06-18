@@ -1,6 +1,6 @@
 
 .home-section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   position: relative; 
 }
@@ -260,6 +260,17 @@
   
   .text-container h1 {
     font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  .text-container p {
+    font-size: 14px;
+  }
+  
+  .text-container h1 {
+    font-size: 16px;
   }
 
 }

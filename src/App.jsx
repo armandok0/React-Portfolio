@@ -1,5 +1,5 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from 'react';
 import Menu from './components/Header/Menu';
 import BlurredBackground from './components/Header/BlurredBackground';
 import BurgerContainer from './components/Header/BurgerContainer';
@@ -11,33 +11,39 @@ import Contact from './components/Contact/Contact';
 import ScrollUp from './components/Utils/ScrollUp';
 import Spinner from "./components/Utils/Spinner";
 
-
 const App = () => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    // Simulate loading of data
+    const loadData = async () => {
+      // Simulate a network request or any asynchronous operation
+      await new Promise(resolve => setTimeout(resolve, 1200));
+      setLoading(false);
+    };
+
+    loadData();
+  }, []);
+
   return (
     <>
-      {loading ? (
-        <Spinner setLoading={setLoading} />
-      ) : (
-        <>
-          <header>
-            {open && <BlurredBackground />}
-            <BurgerContainer open={open} setOpen={setOpen} />
-            <Menu open={open} closeMenu={() => setOpen(false)} />
-          </header>
-          <Home />
-          <About />
-          <Resume />
-          <Projects />
-          <Contact />
-          {!open && <ScrollUp visible={false} />}
-        </>
-      )}
+      {loading && <Spinner />}
+      <div style={{ display: loading ? 'none' : 'block' }}>
+        <header>
+          {open && <BlurredBackground />}
+          <BurgerContainer open={open} setOpen={setOpen} />
+          <Menu open={open} closeMenu={() => setOpen(false)} />
+        </header>
+        <Home />
+        <About />
+        <Resume />
+        <Projects />
+        <Contact />
+        {!open && <ScrollUp visible={false} />}
+      </div>
     </>
   );
 };
 
 export default App;
-

@@ -1,7 +1,7 @@
 .resume-section {
     background-color: #11151C;
     color: white;
-    height: 94vh;
+    min-height: 94vh;
     display: flex;
     position: relative;
     justify-content: center;
@@ -114,9 +114,7 @@
         padding: 0rem;
     }
     .resume-title {
-        
         top: 6%;
-     
     }
 
     .education,
@@ -209,6 +207,26 @@
     .experience-item {
         width: 280px;
     }
-
-
 }
+
+@media only screen and (max-width: 370px) {
+    .education-item,
+    .experience-item {
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .education-item,
+    .experience-item {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .education-item,
+    .experience-item {
+        width: 200px;
+    }
+}
+
