@@ -1,5 +1,5 @@
 .about-section {
-  height: 100vh;
+  min-height: 92vh;
   display: flex;
   position: relative;
   background-color: #11151C;
@@ -9,7 +9,7 @@
 .about-section::before {
   content: '';
   position: absolute;
-  top: 70px;
+  top: 30px;
   left: 50%;
   width: 80%;
   height: 4px;
@@ -21,7 +21,6 @@
 .about-section::after {
   content: '';
   position: absolute;
-  bottom: 70px;
   left: 50%;
   top: 95%;
   width: 80%;
@@ -33,11 +32,9 @@
 
 .about-content {
   display: flex;
-  position: relative;
-  top: 15%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 100px;
 }
 
 .about-description h2 {

@@ -15,7 +15,7 @@ const ScrollButton = styled.button`
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  font-size: 16px;
+  font-size: 15px;
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transition: opacity 0.5s ease;
 `;

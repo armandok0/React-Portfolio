@@ -188,8 +188,6 @@
     .experience-item {
         width: 320px;
     }
-
-
 }
 
 
@@ -198,8 +196,6 @@
     .experience-item {
         width: 320px;
     }
-
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -227,6 +223,13 @@
     .education-item,
     .experience-item {
         width: 200px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .education-item,
+    .experience-item {
+        width: 300px;
     }
 }
 
