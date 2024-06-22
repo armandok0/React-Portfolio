@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-const ScrollButton = styled.button`
+const ScrollButton = styled.button.attrs({ className: 'scroll-button' })`
   position: fixed;
   bottom: 20px;
   right: 20px;

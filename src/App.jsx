@@ -9,26 +9,23 @@ import Resume from './components/Resume/Resume';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import ScrollUp from './components/Utils/ScrollUp';
-import Spinner from "./components/Utils/Spinner";
+import Spinner from './components/Utils/Spinner';
 
 const App = () => {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading of data
     const loadData = async () => {
-      // Simulate a network request or any asynchronous operation
-      await new Promise(resolve => setTimeout(resolve, 1200));
+      await new Promise((resolve) => setTimeout(resolve, 1200));
       setLoading(false);
     };
-
     loadData();
   }, []);
 
   return (
     <>
-      {loading && <Spinner />}
+      {loading && <Spinner setLoading={setLoading} />}
       <div style={{ display: loading ? 'none' : 'block' }}>
         <header>
           {open && <BlurredBackground />}
