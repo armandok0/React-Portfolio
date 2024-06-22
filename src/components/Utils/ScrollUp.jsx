@@ -18,13 +18,29 @@ const ScrollButton = styled.button.attrs({ className: 'scroll-button' })`
   font-size: 15px;
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transition: opacity 0.5s ease;
+
+  @media (max-width: 768px) {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  @media (max-width: 480px) {
+    bottom: 5px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
 `;
+
 
 const Container = styled.div`
   max-width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
 `;
+
+
 
 const ScrollUp = () => {
   const [isVisible, setIsVisible] = useState(false);

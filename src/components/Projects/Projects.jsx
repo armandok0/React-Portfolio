@@ -6,6 +6,8 @@ import gymBackground from '/src/assets/photos/gym.png';
 import manageBackground from '/src/assets/photos/manage.png';
 import resumeBackground from '/src/assets/photos/resume.png';
 import airmanagementBackground from '/src/assets/photos/airmanagement.png';
+import gamingBackground from '/src/assets/photos/gaming.svg';
+
 
 const projectsData = [
   {
@@ -28,7 +30,7 @@ const projectsData = [
   },
   {
     id: 3,
-    name: 'Simple Task',
+    name: 'Simple Angular Task',
     description: 'Manage Customers, Products, and Users',
     languages: ['Angular', 'CSS', 'Typescript'],
     liveLink: '',
@@ -52,6 +54,15 @@ const projectsData = [
     liveLink: '',
     githubLink: 'https://github.com/armandok0/Airline-Flight-Management',
     backgroundImage: `url(${airmanagementBackground})`
+  },
+  {
+    id: 6,
+    name: 'Video Games Informations',
+    description: 'Add to favorites and Search Video Games',
+    languages: ['Vue.js', 'Javascript', 'Css',],
+    liveLink: 'https://video-games-project.netlify.app/',
+    githubLink: 'https://github.com/armandok0/VideoGames-Project',
+    backgroundImage: `url(${gamingBackground})`
   },
 ];
 
