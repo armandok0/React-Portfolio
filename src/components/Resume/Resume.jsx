@@ -40,7 +40,7 @@ function Resume() {
           <div>
             <h4>Frontend Developer</h4>
             <p>Pobuca · Internship</p>
-            <p>Mar 2024 - Present</p>
+            <p>Mar 2024 - Jun 2024</p>
           </div>
         </div>
       </div>
