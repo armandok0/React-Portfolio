@@ -19,14 +19,9 @@ const ScrollButton = styled.button.attrs({ className: 'scroll-button' })`
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transition: opacity 0.5s ease;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     bottom: 10px;
     right: 10px;
-  }
-
-  @media (max-width: 480px) {
-    bottom: 5px;
-    right: 5px;
     width: 35px;
     height: 35px;
     font-size: 12px;
